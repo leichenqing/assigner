@@ -1,0 +1,23 @@
+@charset "utf-8";
+/***
+    @description: 常用/公用样式;
+    @Author: ray;
+    @create date: 2016-09-15;
+***/
+
+.fl{
+    float: left;
+    display: inline;
+}
+.fr{
+    float: right;
+    display: inline;
+}
+.clearfix{
+    zoom: 1;
+    &:after {
+        display: table;
+        content: "";
+        clear: both;
+    }
+}

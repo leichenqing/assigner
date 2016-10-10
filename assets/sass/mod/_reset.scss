@@ -1,0 +1,78 @@
+@charset "utf-8";
+/***
+	@description: 重置默认样式;
+	@Author: ray;
+	@create date: 2016-09-15;
+***/
+
+body{ 
+	font-family: "Microsoft YaHei", "tahoma", "arial", "sans-serif";
+	font-size: 14px;
+	line-height: 1.5;
+	background-color: #FFFFFF; 
+	color: #333;
+}
+body,dl, dd, p, form{
+	margin: 0;
+}
+ol, ul, li{
+	margin: 0; 
+	padding: 0;
+	list-style-type: none;
+}
+em, i{
+	font-style: normal;
+}
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	font-weight: normal;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{ 
+	color: #666; 
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+}
+img{ 
+	border: 0;  
+	vertical-align: top;
+}
+input, select, textarea, button{ 
+	font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+input, select, button, textarea{ 
+	outline: 0;
+	margin: 0;
+}
+
+// html5
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{
+	display:block
+}
+
+// placeholder
+input::-webkit-input-placeholder{
+	color: #999;
+}
+input::-moz-placeholder{
+	color: #999;
+}
+input:-ms-input-placeholder {
+	color: #999; 
+}
+
+// 滚动条
+::-webkit-scrollbar{ width: 10px; height: 10px; }
+::-webkit-scrollbar-button:vertical{ display: none; }
+::-webkit-scrollbar-track:vertical{ background-color: black; }
+::-webkit-scrollbar-track-piece{ background-color: #F5F5F5; }
+::-webkit-scrollbar-thumb:vertical{ margin-right: 10px; background-color: #A6A6A6; }
+::-webkit-scrollbar-thumb:vertical:hover{ background-color: #888; }
+::-webkit-scrollbar-corner:vertical{ background-color: #535353; }
+::-webkit-scrollbar-resizer:vertical{ background-color: #FF6E00; }

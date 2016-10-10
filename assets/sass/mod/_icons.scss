@@ -1,0 +1,11 @@
+@charset "utf-8";
+/***
+    @description: css sprites;
+    @Author: ray;
+    @create date: 2016-09-15;
+***/
+
+$icon-layout: "smart";  //排列方法：vertical、horizontal、diagonal和smart。默认排列方式是vertical。
+$icon-sprite-dimensions: true;  //设置图标的尺寸
+@import "icon/*.png";
+@include all-icon-sprites;

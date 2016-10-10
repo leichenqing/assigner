@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>指派与抄送</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body style="margin: 50px;">
+	
+
+<div class="form-group">
+	<input class="form-assign" type="text" name="assign" value="" placeholder="请输入名称快速检索" id="assigns">
+</div>
+
+<script src="assets/js/jquery-1.9.1.min.js"></script>
+<script src="assets/js/assigner.js"></script>
+<script>
+	$(function(){
+		var assignData = [
+			{"id":"1","key":"b","name":"白白的","dept":"产品部"}, 
+			{"id":'2',"key":"b","name":"毕姥爷","dept":"前端部"},
+			{"id":'4',"key":"a","name":"阿西","dept":"技术部"}, 
+			{"id":'5',"key":"b","name":"毕姥1","dept":"前端部"}, 
+			{"id":'6',"key":"b","name":"毕姥2","dept":"产品部"}, 
+			{"id":'7',"key":"b","name":"毕姥3","dept":"设计部"}, 
+			{"id":'8',"key":"b","name":"毕姥4","dept":"技术部"},
+			{"id":'18',"key":"b","name":"毕姥5","dept":"技术部"},
+			{"id":'38',"key":"b","name":"毕姥6","dept":"技术部"},
+			{"id":'48',"key":"b","name":"毕姥7","dept":"技术部"},
+			{"id":'58',"key":"b","name":"毕姥8","dept":"技术部"},
+			{"id":'68',"key":"b","name":"毕姥9","dept":"技术部"},
+			{"id":'87',"key":"b","name":"毕姥10","dept":"技术部"},
+			{"id":'84',"key":"b","name":"毕姥11","dept":"技术部"},
+			{"id":'843',"key":"b","name":"毕姥12","dept":"技术部"},
+			{"id":'823',"key":"b","name":"毕姥31","dept":"技术部"},
+			{"id":'83',"key":"b","name":"毕姥13","dept":"技术部"},
+			{"id":'81',"key":"b","name":"毕姥22","dept":"技术部"}
+		];
+		var lateData = ['1','4','5'];
+
+		$('#assigns').assigner({
+			data:assignData, 
+			lateData: lateData
+		});
+		
+	})
+</script>
+</body>
+</html>
